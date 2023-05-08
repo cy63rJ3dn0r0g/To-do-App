@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="script.js">
+    <script src="https://kit.fontawesome.com/be1c45821e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/style.css">
+    <title>To-Do list</title>
+</head>
+
+<body>
+    <div class="listToDo">
+        <p id="text1"> TO DO LIST</p>
+        <form action="">
+            <input type="text" class="todo-input" placeholder="enter your task">
+            <button class="addButton" type="submit">
+                <i class="fa-solid fa-circle-plus fa-2xl"></i>
+            </button>
+            <div class="options">
+                <select name="todos" class="filter-todo">
+                    <option value="all">All</option>
+                    <option value="completed">Completed</option>
+                    <option value="uncompleted">Uncompleted</option>
+                </select>
+            </div>
+        </form>
+        <div class="todo-conteiner">
+            <ul class="list">
+            </ul>
+
+        </div>
+        <button class="clearStorage">
+            <i class="fa-solid fa-eraser fa-xl"></i>
+        </button>
+        <div class="tooltip"><p>This button clear memory.</p> </div>
+        <div class="backdrop"></div>
+        <div class="notice">
+            <p id="notice">You can't add new task,finish current ones you Sloth!</p>
+            <button id="noticeBtn">ahhh,ok &#128546</button>
+        </div>
+
+    </div>
+    <script src="assets/script.js"></script>
+
+</body>
+
+</html>
